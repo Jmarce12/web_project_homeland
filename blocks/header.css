@@ -1,0 +1,40 @@
+.header {
+  margin: 34px auto 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 76.875%;
+}
+
+.header__logo {
+  margin: 0 auto 91.06px;
+}
+
+.header__title {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+  width: 73.17%;
+  overflow-wrap: normal;
+  color: #fff;
+}
+
+.header__subtitle {
+  margin: 32px auto 64px;
+  width: 73.17%;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+}
+
+.header__image {
+  width: 100%;
+  height: 53.67%;
+  line-height: 0;
+  border-style: none;
+}
