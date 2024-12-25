@@ -1,4 +1,4 @@
-.content {
+.intro {
   display: flex;
   flex-direction: column;
   margin: 0 0 0 148px;
@@ -7,7 +7,7 @@
   color: #fff;
 }
 
-.content__title {
+.intro__title {
   font-family: "Inter", Arial, sans-serif;
   font-weight: bold;
   font-size: 54px;
@@ -16,7 +16,7 @@
   max-width: 830px;
 }
 
-.content__intro {
+.intro__quote {
   font-family: "Inter", Arial, sans-serif;
   font-size: 24px;
   line-height: 34px;
@@ -24,7 +24,7 @@
   max-width: 738px;
 }
 
-.content__intro-author {
+.intro__intro-author {
   align-self: flex-end;
   font-family: "Inter", Arial, sans-serif;
   font-size: 24px;
@@ -33,7 +33,7 @@
   max-width: 732px;
 }
 
-.content__main-text {
+.intro__main-text {
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 163%;
@@ -42,50 +42,50 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 545px) {
-  .content {
+  .intro {
     max-width: 93.75%;
     margin: auto;
   }
-  .content__title {
+  .intro__title {
     max-width: 92.06%;
     font-size: 45px;
     line-height: 49px;
     margin: 0 0 50px;
   }
-  .content__intro {
+  .intro__quote {
     margin: 0;
     font-size: 24px;
     line-height: 34px;
   }
-  .content__intro-author {
+  .intro__intro-author {
     margin: 0 0 32px;
     position: relative;
     top: -8px;
   }
 }
 @media screen and (max-width: 544px) and (min-width: 320px) {
-  .content {
+  .intro {
     max-width: 90%;
     margin: auto;
   }
-  .content__title {
+  .intro__title {
     max-width: 100%;
     font-size: 32px;
     line-height: 35px;
     margin: 0 0 40px;
   }
-  .content__intro {
+  .intro__quote {
     font-size: 24px;
     line-height: 30px;
     max-width: 100%;
     margin: 0 0 10px;
   }
-  .content__intro-author {
+  .intro__intro-author {
     font-size: 24px;
     line-height: 34px;
     margin: 0 0 32px;
   }
-  .content__main-text {
+  .intro__main-text {
     max-width: 100%;
     font-size: 16px;
     line-height: 163%;
