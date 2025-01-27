@@ -55,9 +55,8 @@
   grid-area: image;
 }
 
-.place__link-image:hover,
-.place__link-button:hover {
-  filter: brightness(60%);
+.place__link-image:hover {
+  opacity: 0.5;
 }
 
 .place__image {
@@ -99,6 +98,14 @@
   border-radius: 4px;
   max-width: fit-content;
   max-height: fit-content;
+}
+
+.place__link-button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
 }
 
 @media screen and (min-width: 544px) and (max-width: 1024px) {
