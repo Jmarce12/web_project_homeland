@@ -1,13 +1,12 @@
 .header {
-  margin: 34px 148px 92px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 76.875%;
 }
 
 .header__logo {
-  margin: 0 auto 91px;
+  margin: 0;
+  padding: 34px 0 91px;
 }
 
 .header__title {
@@ -40,12 +39,9 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 544px) {
-  .header {
-    max-width: 100%;
-    margin: 30px auto 90px;
-  }
   .header__logo {
-    margin: 0 auto 90px;
+    margin: 0;
+    padding: 32px 0 90px;
   }
   .header__title {
     max-width: 530px;
@@ -62,13 +58,10 @@
 }
 
 @media screen and (max-width: 544px) and (min-width: 320px) {
-  .header {
-    max-width: 100%;
-    margin: 20px auto 64px;
-  }
   .header__logo {
     width: 188px;
-    margin: 0 0 50px;
+    padding: 20px 0 50px;
+    margin: 0;
   }
   .header__title {
     max-width: 71.25%;
