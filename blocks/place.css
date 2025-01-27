@@ -79,7 +79,7 @@
   text-decoration-skip-ink: none;
 }
 
-.place__paragraph--line_break {
+.place__paragraph_line_break {
   display: block;
   padding-top: 25px;
 }
