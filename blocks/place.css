@@ -13,7 +13,6 @@
 }
 
 .place:last-of-type {
-  grid-template-rows: auto 345px auto;
   padding-bottom: 0;
 }
 
@@ -63,6 +62,8 @@
   box-shadow: 10px 10px 25px 0px #00000080;
   gap: 0px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .place__paragraph {
@@ -97,7 +98,7 @@
   color: #fff;
   border-radius: 4px;
   max-width: fit-content;
-  max-height: fit-content;
+  height: fit-content;
 }
 
 .place__link-button:hover {
@@ -108,10 +109,10 @@
   );
 }
 
-@media screen and (min-width: 544px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   .place {
-    grid-template-columns: 47.22% 1fr;
-    grid-template-rows: auto auto 1fr;
+    grid-template-columns: minmax(200px, 380px) 1fr;
+    grid-template-rows: auto 380px 1fr;
     column-gap: 28px;
     padding-bottom: 72px;
   }
@@ -129,9 +130,21 @@
     font-size: 16px;
     line-height: 26.08px;
   }
+
+  .place__link-image {
+    height: 380px;
+  }
+
+  .place__image {
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 543px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   .place {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
@@ -159,12 +172,6 @@
       "button";
     row-gap: 30px;
     padding-bottom: 0;
-  }
-
-  .place__title,
-  .place__subtitle,
-  .place__paragraph {
-    padding: 0 16px;
   }
 
   .place__title {
